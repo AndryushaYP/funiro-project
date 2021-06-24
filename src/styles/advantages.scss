@@ -1,0 +1,36 @@
+@import "../styles/mixins.scss";
+
+.advantages {
+  display: flex;
+  width: 1440px;
+  padding: 0 100px;
+  box-sizing: border-box;
+
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include reset;
+    .advantages-item {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      &__title {
+        @include reset;
+        font-family: "Gilroy";
+        color: #3a3a3a;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+      }
+      &__description {
+        @include reset;
+        font-family: "Gilroy";
+        color: #898989;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}
