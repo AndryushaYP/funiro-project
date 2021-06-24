@@ -1,0 +1,13 @@
+@mixin font($family, $size, $height, $weight, $color) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

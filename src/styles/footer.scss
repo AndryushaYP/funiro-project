@@ -1,0 +1,93 @@
+@import "../styles/mixins.scss";
+
+.footer {
+  display: flex;
+  width: 1440px;
+  padding: 50px 100px;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__info {
+    max-width: 249px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-title {
+      @include reset;
+      color: #000000;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      font-family: "Gilroy";
+    }
+    &-description,
+    &-adress,
+    &-phone,
+    &-link {
+      @include reset;
+      @include font("Gilroy", 16px, 24px, 400, #616161);
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-title {
+      @include reset;
+      color: #000000;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      font-family: "Gilroy";
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      list-style: none;
+      @include reset;
+    }
+    &-link {
+      opacity: 1;
+      transition: 0.6s ease;
+      @include font("Gilroy", 16px, 24px, 500, #616161);
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 5px;
+    width: 292px;
+    height: 90px;
+    &-title {
+      @include reset;
+      color: #000000;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      font-family: "Gilroy";
+    }
+    &-label {
+    }
+    &-input {
+      border: none;
+      padding: 8px;
+      background: #f4f5f7;
+      width: 242px;
+      height: 45px;
+      box-sizing: border-box;
+    }
+    &-button {
+      width: 45px;
+      height: 45px;
+      border: none;
+      background: url(../icons/send.svg) #e89f71 no-repeat center;
+    }
+  }
+}
