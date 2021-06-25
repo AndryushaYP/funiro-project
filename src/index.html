@@ -113,6 +113,11 @@
           </li>
         </ul>
       </section>
+      <section class="products">
+        <h2 class="products__heading">Our Products</h2>
+        <ul class="products__list"></ul>
+        <button class="products__button-more">Show More</button>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__info">
@@ -159,5 +164,24 @@
         <button class="footer__form-button"></button>
       </form>
     </footer>
+    <template id="product-template">
+      <div class="product__overlay">
+        <li class="products__list-item">
+          <img src="#" alt="" class="products__image" />
+          <div class="products__info">
+            <h2 class="products__title"></h2>
+            <p class="products__description"></p>
+            <p class="products__price"></p>
+            <p class="products__price products__price_old"></p>
+          </div>
+          <div class="products__label"></div>
+          <div class="products__buttons button">
+            <button class="button button_type_add">Add to cart</button>
+            <button class="button button_type_share">Share</button>
+            <button class="button button_type_like">Like</button>
+          </div>
+        </li>
+      </div>
+    </template>
   </body>
 </html>
