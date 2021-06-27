@@ -1,13 +1,6 @@
 import "../pages/index.scss";
-import {
-  products,
-  productsList,
-  buttonMore,
-  slides,
-  slideLink,
-  buttonArrow,
-} from "../utils/constants";
-console.log(slideLink);
+import { products, productsList, buttonMore } from "../utils/constants";
+
 const createProduct = () => {
   const template = document.querySelector("#product-template").content;
   const productElement = template.querySelector(".product__overlay").cloneNode(true);
@@ -43,14 +36,6 @@ const getProducts = (start, end) => {
   });
 };
 
-/* const checkActiveSlide = () => {
-  Array.from(slides).forEach((item) => {
-    if (item.classList.contains("active-slide")) {
-      slideLink.style.display = "flex";
-    }
-  });
-}; */
-
 buttonMore.addEventListener("click", () => {
   const productsArr = productsList.querySelectorAll(".products__list-item");
   if (productsArr.length !== products.length) {
@@ -63,8 +48,10 @@ const swiper = new Swiper(".main-slider__swiper-container", {
   loop: true,
   spaceBetween: 32,
   slidesOffsetBefore: 405,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   slideActiveClass: "active-slide",
+  parallax: true,
+  speed: 1000,
 
   // If we need pagination
   pagination: {
@@ -78,6 +65,4 @@ const swiper = new Swiper(".main-slider__swiper-container", {
     prevEl: ".main-slider__button_prev",
   },
 });
-
-/* checkActiveSlide(); */
 getProducts(0, 4);
