@@ -10,6 +10,9 @@ export const productsList = document.querySelector(".products__list");
 export const buttonMore = document.querySelector(".products__button-more");
 export const productsArr = productsList.querySelectorAll(".products__list-item");
 export const productsButtons = document.querySelector(".psoducts__buttons");
+export const slides = document.querySelectorAll(".swiper-slide");
+export const slideLink = document.querySelectorAll(".main-slider__link");
+export const buttonArrow = document.querySelector(".main-slider__button_next");
 export const products = [
   {
     id: 1,
@@ -93,7 +96,7 @@ export const products = [
     id: 8,
     url: "#",
     title: "Potty",
-    text: "minimalist flower pot",
+    text: "Minimalist flower pot",
     label: "New",
     image: img8,
     price: "500.000",

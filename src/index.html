@@ -6,6 +6,7 @@
     <meta name="description" content="Funiro Андрей Клонингер" />
     <meta name="keywords" content="html, css, javascript" />
     <meta name="author" content="Андрей Клонингер" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Funiro</title>
   </head>
 
@@ -36,7 +37,55 @@
       </div>
     </header>
     <main class="main">
-      <section class="main-slider"></section>
+      <section class="main-slider">
+        <div class="main-slider__swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://sun9-1.userapi.com/impg/bj1AyDUEwn2il7QephHhy6azdGJH4y2ROiZ2dA/cFvmLDqtZRE.jpg?size=934x553&quality=96&sign=0582a3ecc5957e787a27fd1a9f90361d&type=album"
+              />
+              <a class="main-slider__link link-slider">
+                <h2 class="link-slider__title">Bohaus</h2>
+                <p class="link-slider__description">Luxury big sofa 2-seat</p>
+                <p class="link-slider__price">Rp 17.000.000</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://sun9-51.userapi.com/impg/oFV7tNf-lYWmEFBxU-EhSD69S_I1_eI_ih-Naw/nn2Im-qYek0.jpg?size=934x553&quality=96&sign=060de1afb2bef8d1d4b5d2765d4881d4&type=album"
+              />
+              <a class="main-slider__link link-slider">
+                <h2 class="link-slider__title">Bohaus</h2>
+                <p class="link-slider__description">Luxury big sofa 2-seat</p>
+                <p class="link-slider__price">Rp 17.000.000</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://sun9-20.userapi.com/impg/zpslYldSp401EMXUiU4HLheTPe75YqvPs3Cnzg/UQ1a6iGNJc4.jpg?size=934x553&quality=96&sign=685422672de28256de7b98848050eac5&type=album"
+              />
+              <a class="main-slider__link link-slider">
+                <h2 class="link-slider__title">Bohaus</h2>
+                <p class="link-slider__description">Luxury big sofa 2-seat</p>
+                <p class="link-slider__price">Rp 17.000.000</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__pagination"></div>
+        <div class="main-slider__buttons buttons">
+          <button class="main-slider__button main-slider__button_prev"></button>
+          <button class="main-slider__button main-slider__button_next"></button>
+        </div>
+        <article class="main-slider__info info-slider">
+          <h1 class="info-slider__title">High-Quality Furniture Just For You</h1>
+          <p class="info-slider__description">
+            Our furniture is made from selected and best quality materials that are suitable for
+            your dream home
+          </p>
+          <button class="info-slider__button">Shop Now</button>
+        </article>
+      </section>
       <section class="advantages">
         <ul class="advantages__list">
           <li class="advantages__item advantages-item">
@@ -183,5 +232,6 @@
         </li>
       </div>
     </template>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 50px 100px;
   box-sizing: border-box;
-  background-color: #f9f1e7;
+  background: linear-gradient(to right, #f9f1e7 65%, #fcf8f3 35%);
   &__logo {
     margin: 0;
     @include font("Gilroy", 24px, 29px, 700, #000000);

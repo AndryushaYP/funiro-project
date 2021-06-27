@@ -1,6 +1,13 @@
 import "../pages/index.scss";
-import { products, productsList, buttonMore } from "../utils/constants";
-
+import {
+  products,
+  productsList,
+  buttonMore,
+  slides,
+  slideLink,
+  buttonArrow,
+} from "../utils/constants";
+console.log(slideLink);
 const createProduct = () => {
   const template = document.querySelector("#product-template").content;
   const productElement = template.querySelector(".product__overlay").cloneNode(true);
@@ -36,6 +43,14 @@ const getProducts = (start, end) => {
   });
 };
 
+/* const checkActiveSlide = () => {
+  Array.from(slides).forEach((item) => {
+    if (item.classList.contains("active-slide")) {
+      slideLink.style.display = "flex";
+    }
+  });
+}; */
+
 buttonMore.addEventListener("click", () => {
   const productsArr = productsList.querySelectorAll(".products__list-item");
   if (productsArr.length !== products.length) {
@@ -44,4 +59,25 @@ buttonMore.addEventListener("click", () => {
   }
 });
 
+const swiper = new Swiper(".main-slider__swiper-container", {
+  loop: true,
+  spaceBetween: 32,
+  slidesOffsetBefore: 405,
+  slidesPerView: "auto",
+  slideActiveClass: "active-slide",
+
+  // If we need pagination
+  pagination: {
+    el: ".main-slider__pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".main-slider__button_next",
+    prevEl: ".main-slider__button_prev",
+  },
+});
+
+/* checkActiveSlide(); */
 getProducts(0, 4);
