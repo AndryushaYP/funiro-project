@@ -1,0 +1,96 @@
+.furniture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+  &__description {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #616161;
+    margin: 0;
+    position: relative;
+    top: 75px;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #3a3a3a;
+    margin: 0;
+    position: relative;
+    top: 75px;
+  }
+  &__gallery {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    .furniture__image {
+      object-fit: cover;
+      &_one {
+        grid-row: 1;
+        grid-column: 1;
+        transform: translate(-73px);
+        align-self: end;
+      }
+      &_two {
+        grid-column: 2 /-4;
+        justify-self: end;
+        align-self: end;
+        grid-row: 1;
+      }
+      &_six {
+        grid-row: 2;
+        grid-column: 1;
+        align-self: start;
+        transform: translate(-73px);
+      }
+      &_seven {
+        justify-self: end;
+        align-self: start;
+        grid-row: 2;
+        grid-column: 2/-4;
+      }
+      &_three {
+        align-self: center;
+        grid-row: 1/2;
+        grid-column: 2;
+        transform: translateY(196px);
+      }
+      &_four {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: start;
+        align-self: end;
+        transform: translateY(51px);
+      }
+      &_five {
+        grid-column: 3;
+        grid-row: 1;
+        transform: translate(307px, 51px);
+        align-self: end;
+      }
+      &_eight {
+        grid-column: 3;
+        grid-row: 2;
+        justify-self: start;
+        align-self: start;
+        transform: translateY(51px);
+      }
+
+      &_nine {
+        grid-column: -1/-2;
+        grid-row: 2;
+        align-self: start;
+        justify-self: end;
+        transform: translate(12px, 51px);
+      }
+    }
+  }
+}

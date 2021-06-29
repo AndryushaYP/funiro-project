@@ -1,6 +1,39 @@
 import "../pages/index.scss";
-import { products, productsList, buttonMore } from "../utils/constants";
+import imgOne from "../images/furniture/01.jpg";
+import imgTwo from "../images/furniture/02.jpg";
+import imgThree from "../images/furniture/03.jpg";
+import imgFour from "../images/furniture/04.jpg";
+import imgFive from "../images/furniture/05.jpg";
+import imgSix from "../images/furniture/06.jpg";
+import imgSeven from "../images/furniture/07.jpg";
+import imgEight from "../images/furniture/08.jpg";
+import imgNine from "../images/furniture/09.jpg";
+
+import {
+  products,
+  productsList,
+  buttonMore,
+  imageOne,
+  imageTwo,
+  imageThree,
+  imageFour,
+  imageFive,
+  imageSix,
+  imageSeven,
+  imageEight,
+  imageNine,
+} from "../utils/constants";
 import { mainSwiper, roomsSwiper, tipsSwiper } from "../components/slider";
+
+imageOne.src = imgOne;
+imageTwo.src = imgTwo;
+imageThree.src = imgThree;
+imageFour.src = imgFour;
+imageFive.src = imgFive;
+imageSix.src = imgSix;
+imageSeven.src = imgSeven;
+imageEight.src = imgEight;
+imageNine.src = imgNine;
 
 const createProduct = () => {
   const template = document.querySelector("#product-template").content;
