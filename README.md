@@ -12,4 +12,4 @@
 
 ## Адаптив в процессе...
 
-[FUniro.](https://funiro-project.netlify.app/)
+[Funiro.](https://funiro-project.netlify.app/)
